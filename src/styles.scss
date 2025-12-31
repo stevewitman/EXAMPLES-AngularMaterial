@@ -37,23 +37,17 @@ body {
 }
 /* You can add global styles to this file, and also import other style files */
 
-.test1 {
-  height: 200px;
-  background-color: white;
-  color: blue;
-  padding: 20px;
-}
-.test2 {
-  height: 200px;
-  background-color: var(--mat-sys-surface);
-  color: var(--mat-sys-on-surface);
-  padding: 20px;
-}
 
 
 /********************************************
 ANGULAR MATERIAL - TABS
 ********************************************/
+.mat-mdc-tab-header {
+  margin-bottom: 5px;
+}
+.mat-mdc-tab {
+  max-width: 120px !important;
+}
 .mat-mdc-tab-header-pagination.mat-mdc-tab-header-pagination-before {
   background-color: #cfb87c;
 }
@@ -67,11 +61,7 @@ ANGULAR MATERIAL - TABS
 .tab-title {
   color: black;
   font-size: 1.25rem;
-  position: relative;
   padding: 0 5px;
-}
-.tab-content {
-  font-size: 1rem;
 }
 .mdc-tab-indicator--active {
   background-color: #4D4D4D !important;
@@ -79,7 +69,20 @@ ANGULAR MATERIAL - TABS
     color: white !important;
   }
 }
+.panel-svg {
+  position: relative;
+  bottom: 3px;
+  right: 2px;
+}
+.tab-content {
+  font-size: 1rem;
+}
 .mdc-tab .mdc-tab-indicator {
   display: none;
 }
 /***** END ... ANGULAR MATERIAL - TABS *****/
+
+.mat-expanded .panel-data {
+  background-color: silver;
+}
+// mat-expansion-panel-header mat-focus-indicator mat-expansion-toggle-indicator-after mat-expanded

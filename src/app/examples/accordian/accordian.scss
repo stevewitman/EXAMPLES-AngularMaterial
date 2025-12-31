@@ -1,0 +1,43 @@
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field+.mat-mdc-form-field {
+  margin-left: 8px;
+}
+.cable-totals-type-6A {
+  color: gray;
+  padding-right: 0.25rem;
+}
+.cable-totals-type-6 {
+  color: rgb(0, 76, 255);
+  padding-right: 0.25rem;
+}
+.cable-totals-type-5E {
+  color: rgb(0, 174, 69);
+  padding-right: 0.25rem;
+}
+.cable-totals-type-other {
+  color: gray;
+  padding-right: 0.25rem;
+}
+.cable-totals-type-blank {
+  color: gray;
+  padding-right: 0.25rem;
+}
+.cable-totals-count {
+  color: black;
+  padding-right: 1rem;
+}
+.panel-svg {
+  position: relative;
+  bottom: 3px;
+  padding-right: 10px;
+}
+.panel-data {
+  background-color: white;
+  color: black;
+  position: relative;
+  font-size: 18px;
+}

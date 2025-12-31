@@ -1,0 +1,16 @@
+<h2>Angular Material Example - Accordian (Expansion Panels)</h2>
+<mat-accordion class="example-headers-align">
+  @for (panel of panels; track panel) {
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <svg class="panel-svg" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#cfb87c"><path d="M 80 -170 v -440 h 800 v 440 H 80 Z m 80 -440 Z m 180 0 H 340 Z m 180 0 z M 700 -610 z m 0 180 h 100 v -100 H 700 v 100 Z m -180 0 h 100 v -100 H 520 v 100 Z m -180 0 h 100 v -100 H 340 v 100 Z m -80 -100 H 160 v 100 h 100 v -100 Z m 440 280 h 100 v -100 H 700 v 100 Z m -180 0 h 100 v -100 H 520 v 100 Z m -180 0 h 100 v -100 H 340 v 100 Z m -180 0 h 100 v -100 H 160 v 100 Z"/></svg>
+          <span class="panel-data">{{ bldg }}-{{ idf }}-{{ panel.panel }}</span>
+          
+        </mat-panel-title>
+        <!-- <mat-panel-description></mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <div class="accordian-content">(Panel data for {{ panel.panel }})</div>
+    </mat-expansion-panel>
+  }
+</mat-accordion>
