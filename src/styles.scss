@@ -6,6 +6,24 @@
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 
+:root {
+  --primary-bg-color: green;
+  --light-black: #212121;
+  --med-black: #1F1F1F;
+  --dark-black: #000000;
+  --light-gray: #EEEEEE;
+  --med-gray: #CCCCCC;
+  --dark-gray: #4D4D4D;
+  --light-gold: #E7DEC6;
+  --dark-gold: #CBB983;
+  --xdark-gold: #382D1E;
+  --light-blue: #3579F6;
+  --med-blue: #3475B8;
+  --dark-blue: #245696;
+  --light-yellow: #FCECA9;
+  --dark-yellow: #F9D95E;
+}
+
 html {
   height: 100%;
   @include mat.theme((
@@ -49,10 +67,10 @@ ANGULAR MATERIAL - TABS
   max-width: 120px !important;
 }
 .mat-mdc-tab-header-pagination.mat-mdc-tab-header-pagination-before {
-  background-color: #cfb87c;
+  background-color: var(--dark-gold);
 }
 .mat-mdc-tab-header-pagination.mat-mdc-tab-header-pagination-after {
-  background-color: #cfb87c;
+  background-color: var(--dark-gold);
 }
 .mat-mdc-tab-header-pagination-disabled {
   background-color: #CCC !important;
@@ -64,7 +82,7 @@ ANGULAR MATERIAL - TABS
   padding: 0 5px;
 }
 .mdc-tab-indicator--active {
-  background-color: #4D4D4D !important;
+  background-color: var(--dark-gray) !important;
   .tab-title {
     color: white !important;
   }
@@ -86,3 +104,30 @@ ANGULAR MATERIAL - TABS
   background-color: silver;
 }
 // mat-expansion-panel-header mat-focus-indicator mat-expansion-toggle-indicator-after mat-expanded
+// :root {
+//   @include mat.autocomplete-overrides((background-color: #EEEEEE,
+//     ));
+//   // @include mat.icon-overrides((color: #E7DEC6,
+//   //     ));
+// }
+
+.mdc-text-field {
+  background-color: var(--mat-sys-surface) !important;
+}
+.mat-mdc-text-field-wrapper {
+  width: 400px !important;
+}
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+  border-color: var(--dark-gold) !important;
+}
+// .mdc-notched-outline {
+//   border-width: 5px !important;
+// }
+// .mdc-notched-outline--notched {
+//   border-width: 5px !important;
+// }
+.mdc-floating-label--float-above {
+  color: var(--dark-gold) !important;
+}
