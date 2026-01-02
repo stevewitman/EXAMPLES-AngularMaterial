@@ -1,0 +1,20 @@
+<mat-toolbar class="toolbar-row">
+  <div class="header-container">
+    <div class="header-left">
+      <!-- <button matIconButton (click)="toggleSideNav()">
+        <mat-icon>menu</mat-icon>
+      </button> -->
+      <button matButton [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/">Home</button>
+        <button mat-menu-item routerLink="/accordian">Accordian</button>
+        <button mat-menu-item routerLink="/autocomplete">Autocomplete</button>
+        <button mat-menu-item routerLink="/tabs">Tabs</button>
+        <button mat-menu-item routerLink="/tabs-nested">Tabs Nested</button>
+      </mat-menu>
+      <span>Angular Material Examples</span>
+    </div>
+    <!-- <app-search-bar /> -->
+    <!-- <app-header-actions /> -->
+  </div>
+</mat-toolbar>

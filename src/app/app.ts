@@ -8,10 +8,20 @@ import { TabsNested } from './examples/tabs-nested/tabs-nested';
 import { Accordian } from "./examples/accordian/accordian";
 import { Autocomplete } from './examples/autocomplete/autocomplete';
 import { MatDatepickerModule } from "@angular/material/datepicker";
+import { Header } from './examples/header/header'
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatDividerModule, Tabs, TabsNested, Accordian, Autocomplete, MatDatepickerModule],
+  imports: [
+    RouterOutlet,
+    Header,
+    MatDividerModule,
+    Tabs,
+    TabsNested,
+    Accordian,
+    Autocomplete,
+    MatDatepickerModule,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

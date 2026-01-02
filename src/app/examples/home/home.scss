@@ -1,0 +1,78 @@
+.swatch {
+  height: 50px;
+  width: 500px;
+  font-size: 20px;
+  align-content: center;
+  justify-content: center;
+}
+.light-text {
+  color: white;
+  padding: 10px;
+}
+.dark-text {
+  color: black;
+  padding: 10px;
+}
+.gold-text {
+  color: var(--dark-gold);
+  padding: 10px;
+}
+
+.med-white {
+  background-color: var(--mat-sys-surface);
+}
+.light-black {
+  background-color: var(--light-black);
+}
+
+.med-black {
+  background-color: var(--med-black);
+}
+
+.dark-black {
+  background-color: var(--dark-black);
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+}
+
+.med-gray {
+  background-color: var(--med-gray);
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+}
+
+.light-gold {
+  background-color: var(--light-gold);
+}
+
+.dark-gold {
+  background-color: var(--dark-gold);
+}
+
+.xdark-gold {
+  background-color: var(--xdark-gold);
+}
+
+.light-blue {
+  background-color: var(--light-blue);
+}
+
+.med-blue {
+  background-color: var(--med-blue);
+}
+
+.dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.light-yellow {
+  background-color: var(--light-yellow);
+}
+
+.dark-yellow {
+  background-color: var(--dark-yellow);
+}

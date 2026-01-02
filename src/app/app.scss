@@ -1,47 +1,6 @@
+.main-content {
+  position: relative;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+}
 
-.swatch {
-  height: 20px;
-  width: 100px;
-}
-.light-black{
-  background-color: var(--light-black);
-}
-.med-black{
-  background-color: var(--med-black);
-}
-.dark-black{
-  background-color: var(--dark-black);
-}
-.light-gray {
-  background-color: var(--light-gray);
-}
-.med-gray {
-  background-color: var(--med-gray);
-}
-.dark-gray {
-  background-color: var(--dark-gray);
-}
-.light-gold {
-  background-color: var(--light-gold);
-}
-.dark-gold {
-  background-color: var(--dark-gold);
-}
-.xdark-gold {
-  background-color: var(--xdark-gold);
-}
-.light-blue {
-  background-color: var(--light-blue);
-}
-.med-blue {
-  background-color: var(--med-blue);
-}
-.dark-blue {
-  background-color: var(--dark-blue);
-}
-.light-yellow {
-  background-color: var(--light-yellow);
-}
-.dark-yellow {
-  background-color: var(--dark-yellow);
-}

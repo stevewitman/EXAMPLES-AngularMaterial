@@ -1,4 +1,4 @@
-<h2>Angular Material Example - Autocomplete</h2>
+<h2>Autocomplete</h2>
 <form class="example-form">
   <mat-form-field  appearance="outline" class="example-full-width">
     <mat-label>Building</mat-label>
@@ -10,29 +10,11 @@
            [matAutocomplete]="auto"
            (input)="filter()"
            (focus)="filter()">
-              
       <mat-icon matSuffix>search</mat-icon>
-
     <mat-autocomplete requireSelection #auto="matAutocomplete">
-      @for (option of filteredOptions; track option) {
-        <mat-option [value]="option">{{option}}</mat-option>
+      @for (area of filteredOptions; track area) {
+        <mat-option [value]="area">{{area}}</mat-option>
       }
     </mat-autocomplete>
   </mat-form-field>
 </form>
-<!-- <form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Room Number</mat-label>
-    <input type="text"
-           placeholder="Pick one"
-           aria-label="Number"
-           matInput
-           [formControl]="myControl"
-           [matAutocomplete]="auto">
-    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-      @for (option of filteredOptions | async; track option) {
-        <mat-option [value]="option">{{option}}</mat-option>
-      }
-    </mat-autocomplete>
-  </mat-form-field>
-</form> -->
