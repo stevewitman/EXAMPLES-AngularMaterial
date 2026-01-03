@@ -26,4 +26,8 @@ export const routes: Routes = [
     path: 'autocomplete',
     loadComponent: () => import('./examples/autocomplete/autocomplete').then((mod) => mod.Autocomplete),
   },
+  {
+    path: 'read-buildings',
+    loadComponent: () => import('./examples/read-buildings/read-buildings').then((mod) => mod.ReadBuildings),
+  },
 ];

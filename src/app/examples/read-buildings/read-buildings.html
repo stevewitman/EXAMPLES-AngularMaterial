@@ -1,0 +1,11 @@
+<h2>Read File (.txt, .csv, .tsv, or .json) From File System Using File System API</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/File_System_API">File System API</a></p>
+<button mat-raised-button (click)="getFile()">Select File</button><button mat-raised-button (click)="clear()">Clear</button>
+@if (fileData().name) {
+  <p><span class="label">File Name:</span> {{ fileData().name }}</p>
+  <p><span class="label">File Kind:</span> {{ fileData().kind }}</p>
+  <p><span class="label">File Extension:</span> {{ fileData().extension }}</p>
+  <p><span class="label">File Size:</span> {{ fileData().size }}</p>
+  <p><span class="label">Date Modified:</span> {{ fileData().dateMod }}</p>
+  <p>{{ fileData().content }}</p>
+}
